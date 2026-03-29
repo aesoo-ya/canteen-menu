@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>CANTEEN MENU</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Welcome! Please select your order</h1>
+
+<div class="container">
+	<div class="left">
+
+		<div class="item">
+    			<img src="images/donburi.jpg" alt="donburi">
+			<h3>Donburi</h3>
+			<p>$5.50</p>
+			<button class="setBtn" id="donburi">Confirm</button>
+			<button class="setBtn" id="donburiPlus">+</button>
+			<button class="setBtn" id="donburiMinus">-</button>
+			<p id="numberD"></p>
+		</div>
+
+		<div class="item">
+			<img src="images/sandwich.jpg" alt="sandwich">
+			<h3>Tamago Sando</h3>
+			<p>$3.50</p>
+			<button class="setBtn" id="sandwich">Confirm</button>
+			<button class="setBtn" id="sandwichPlus">+</button>
+			<button class="setBtn" id="sandwichMinus">-</button>
+			<p id="numberS"></p>
+		</div>
+
+		<div class="item">
+			<img src="images/onigiri.jpg" alt="onigiri">
+			<h3>Onigiri</h3>
+			<p>$3.00</p>
+			<button class="setBtn" id="onigiri">Confirm</button>
+			<button class="setBtn" id="onigiriPlus">+</button>
+			<button class="setBtn" id="onigiriMinus">-</button>
+			<p id="numberO"></p>
+		</div>
+
+		<div class="row">
+			<div class="item">
+				<img src="images/salad.jpg" alt="salad">
+				<h3>Sunomono</h3>
+				<p>$4.50</p>
+				<button class="setBtn" id="salad">Confirm</button>
+				<button class="setBtn" id="saladPlus">+</button>
+				<button class="setBtn" id="saladMinus">-</button>
+				<p id="numberC"></p>
+			</div>
+
+			<div class="item">
+				<img src="images/daifuku.jpg" alt="daifuku">
+				<h3>Daifuku</h3>
+				<p>$3.00</p>
+				<button class="setBtn" id="daifuku">Confirm</button>
+				<button class="setBtn" id="daifukuPlus">+</button>
+				<button class="setBtn" id="daifukuMinus">-</button>
+				<p id="numberA"></p>
+			</div>
+
+			<div class="item">
+				<img src="images/karaage.jpg" alt="karaage">
+				<h3>Karaage</h3>
+				<p>$4.50</p>
+				<button class="setBtn" id="karaage">Confirm</button>
+				<button class="setBtn" id="karaagePlus">+</button>
+				<button class="setBtn" id="karaageMinus">-</button>
+				<p id="numberK"></p>
+			</div>
+		
+		
+		</div>
+	</div>
+
+	<div class="right">
+		<h1>Payment Details</h1>
+
+		<form class="payment">
+			<label>Name on Card</label><br>
+			<input type="text"><br><br>
+
+			<label>Card Number</label><br>
+			<input type="text"><br><br>
+
+			<label>Expiry Date</label><br>
+			<input type="text"><br><br>
+
+			<label>CVV</label><br>
+			<input type="text"><br><br>
+		</form>
+
+		<div class="order-summary">
+			<h2>Your Order</h2>
+
+			<p class="empty-msg">No items selected</p>
+
+			<p class="purchase-msg">Purchase when you're ready!</p>
+
+			<ul id="orderList"></ul>
+			<p id="totalPrice"></p>
+
+			<button id="resetOrder">Reset Order</button>
+
+			<button id="purchaseOrder">Click to Purchase</button>
+			<p id="purchaseMsg"></p>
+		</div>
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
