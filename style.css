@@ -7,11 +7,21 @@ body {
 	font-family: "MyFont", sans-serif;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+	background: #f7f3ff;
+	color: #4a4a4a;
+	margin: 0;
+}
+
+h1 {
+	color: #6a4fbf;
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 .container {
 	display: flex;
 	gap: 40px;
+	align-items: flex-start;
 }
 
 .left {
@@ -24,6 +34,18 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	padding: 20px;
+	border-radius: 16px;
+	transition: transform 0.2s ease;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	text-align: center;
+	margin-bottom: 20px;
+	background: white;
+	margin: 20px
+
+}
+
+.item:hover {
+	 transform: translateY(-4px);
 }
 
 .row {
@@ -35,5 +57,58 @@ body {
 .item img {
 	width: 200px;
 	height: 150px;
-	border-radius: 10px;
+	border-radius: 12px;
+	object-fit: cover;
+}
+
+.setBtn:hover {
+	background: #d8c4ff;
+}
+
+.setBtn:active {
+    transform: scale(0.95);
+}
+
+.order-summary {
+	background: white;
+	padding: 20px;
+	border-radius: 16;
+	box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+	width: 300px;
+}
+
+.order-summary h2 {
+	margin-top: 0;
+	color: #6a4fbf;
+}
+
+.empty-msg {
+	color: #b8a8d9;
+	font-style: italic;
+}
+
+#totalPrice {
+	margin-top: 10px;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #6a4fbf;
+}
+
+#resetOrder
+#purchaseOrder {
+	background: #c7b3ff;
+	border: none;
+	padding: 10px 16px
+	border-radius: 12px;
+	cursor: pointer;
+	font-weight: 600;
+	width: 100%
+	margin-top: 10px
+	transition: background 0.2s ease; 
+}
+
+.purchase-msg {
+	margin-top: 10px;
+	font-weight: 600;
+	color:  #6a4fbf;
 }

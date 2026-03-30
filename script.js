@@ -171,7 +171,7 @@ purchaseBtn.addEventListener("click", purchaseOrder);
 function purchaseOrder () {
 	if (total === 0) {
 		purchaseMsg.textContent = "You haven't made an order yet, silly!";
-		purchaseMsg.style.color = "pink";
+		purchaseMsg.style.color = "magenta";
 
 		setTimeout(() => {
 			purchaseMsg.textContent = "";
